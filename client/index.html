@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Log in </title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style>
+  	.body{
+  		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  		color: #777;
+  	}
+  	.crop {
+	    width: 200px;
+	    height: 150px;
+	    overflow: hidden;
+	}
+  </style>
+</head>
+
+<Body>
+  
+  
+  <!-- Title Bar -->
+  	<nav class="navbar navbar-default" style="background-color: white">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+	      		</button>
+        
+				<a href="/" class="navbar-brand" id="tocheck">H-starter</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a data-toggle="collapse" href="#usrSection" aria-expanded="false" aria-controls="collapseExample">
+            			Join / Log in
+          			</a>
+        		</li>
+			</ul>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			  
+			<div class="collapse" id="usrSection">
+        		<div class="card card-block">
+	          		<div class="container" id="UnauthBlock">
+	          			<div class="row">
+	          				<!--//when document.documentElement.clientWidt < 992, md => sm-->
+	          				<!-- Sign up -->
+					 	 	<div class="col-md-6" style="text-align: center;" id="join-form">
+					 	 		<div class="form-group">
+					 	 			<h3 style="color: #777">Join</h3>
+					 	 		</div>
+					 	 		<div class="form-group">
+					 	 			<input type="email" name="email" ref="email" placeholder="Email" style="width: 80%; height: 40px; font-size: 15px" id="usrName" />
+					 	 		</div>
+					 	 		<div class="form-group">
+					 	 			<input type="text" name="nickName" ref="nickName" placeholder="Nick Name" style="width: 80%; height: 40px; font-size: 15px" id="nickName" />
+					 	 		</div>
+					 	 		<div class="form-group">
+					 	 			<input type="password" name="password" ref="password" placeholder="Password" style="width: 80%; height: 40px; font-size: 15px" id="psw" />
+					 	 		</div>
+					 	 		<div class="form-group" >
+					 	 			<input type="password" name="re-password" ref="re-password" placeholder="Re-enter Password" style="width: 80%; height: 40px; font-size: 15px" id="psw" />
+					 	 		</div>
+					 	 	 	<div class="form-group">
+					 	 	 		<button onclick="regUsr(event);" style="background: linear-gradient(#d84b70,#db436b,#d83862); width: 80%; height: 40px;color: #fff; font-size: 15px">
+					 	 	 			Register
+					 	 	 		</button>
+					 	 	 	</div>
+					 	 	</div>
+					 	 	<!-- Login -->
+					 	 	<div class="col-md-6" style="text-align: center; ">
+					 	 		<div class="form-group">
+					 	 			<h3 style="color: #777">Log in</h3>
+					 	 		</div>
+					 	 		<div class="form-group">
+					 	 			<input type="email" name="email" ref="email" placeholder="Email" style="width: 80%; height: 40px; font-size: 15px" />
+					 	 		</div>
+					 	 	 	<div class="form-group">
+					 	 			<input type="password" name="password" ref="password" placeholder="Password" style="width: 80%; height: 40px; font-size: 15px" />
+					 	 		</div>
+					 	 	 	<div class="form-group">
+					 	 	 		<button style="background: linear-gradient(#d84b70,#db436b,#d83862); width: 80%; height: 40px;color: #fff; font-size: 15px">
+					 	 	 			Sign in
+					 	 	 		</button>
+					 	 	 	</div>
+					 	 	</div>
+				 	 	</div>
+				 	 	<!-- to leave some space below border-right of join-form-->
+				 	 	<h3>
+					 		
+					 	</h3>
+			 		</div>
+        		</div>
+     		</div>
+		</div>
+	</nav>
+  
+	<!--search-->
+	<div class="container" style="margin-right: auto; margin-left: auto; margin-top: 40px; margin-bottom: 40px; max-width:700px">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search for...">
+		    <span class="input-group-btn">
+		    	<button class="btn btn-default" type="button"> Search </button>
+		    </span>
+    	</div>
+	</div>
+	
+	<!--For Test-->
+	<div>
+		<img id="testimg">
+		<input type="file" onchange="onChoseFile(event)">
+	</div>
+	
+	<!--gallery-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-4">
+				<div class="thumbnail">
+					<img src="img/thumb/img0.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+ 	
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="/js/helperTool.js"></script>
+	<script src="/js/homepage.js"></script>
+	
+	
+</Body>
+
+</html>

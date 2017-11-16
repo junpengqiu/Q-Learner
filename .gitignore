@@ -1,0 +1,5 @@
+./temp/*
+./mongod/*
+./dataMongo/*
+./client/img/*
+./node_modules/*
