@@ -1,0 +1,46 @@
+* {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #777;
+}
+
+Body {
+  margin: 0;
+  padding:0;
+}
+
+.banner {
+  background-color: #aaa;
+  text-align: center;
+}
+
+.navWrapper {
+  max-width: 1250px;
+  margin:auto;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  background-color: #aaa;
+}
+
+.navBulletPoint a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.navBulletPoint a:hover {
+  background-color: #ddd;
+}
+
+#usrSectionTest {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+  background: url(https://placekitten.com/g/600/300);
+  color: #FFF;
+}
+
+
+

@@ -3,46 +3,55 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Log in </title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
   <style>
-  	.body{
-  		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  		color: #777;
-  	}
-  	.crop {
-	    width: 200px;
-	    height: 150px;
-	    overflow: hidden;
-	}
   </style>
 </head>
 
 <Body>
   
-  
   <!-- Title Bar -->
   	<nav style="background-color: white">
-		<div>
-			<div>
-				<a href="/" id="tocheck">H-starter</a>
-			</div>
-			<ul>
-				<li>
+		<div class="banner">
+			<ul class="navWrapper">
+				<li class="navBulletPoint">
+					<a href="/" id="tocheck">
+						H-starter
+					</a>
+				</li>
+        
+        <li class="navBulletPoint">
+        	<a href="#">
+        		About
+        	</a>
+        </li>
+        
+				<li class="navBulletPoint">
+					<a href="#">
+						Contact
+					</a>
+				</li>
+				
+				<li class="navBulletPoint" style="float: right; cursor: pointer" onclick="hey()">
 					<a>
-            			Join / Log in
-          			</a>
-        		</li>
+						Join / Login
+          </a>
+        </li>
 			</ul>
-			<div id="bs-nav-demo">
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			  
+			
+				
+		</div>
+		
+		
+		<div id="usrSectionTest">
+		</div>
+				
+			
+		<div>	  
 			<div id="usrSection">
-        		<div>
-	          		<div id="UnauthBlock">
-	          			<div>
+      	<div>
+	      	<div id="UnauthBlock">
+	        	<div>
 	          				<!--//when document.documentElement.clientWidt < 992, md => sm-->
 	          				<!-- Sign up -->
 					 	 	<div id="join-form">

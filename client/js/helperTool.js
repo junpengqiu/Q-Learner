@@ -53,3 +53,12 @@ function myAjax(toSend,cb){
     xhttp.open("POST", "https://h-starter-dawahent.c9users.io/");
     xhttp.send(toSend);
 }
+
+function hey(argument) {
+    let temp = document.getElementById("usrSectionTest")
+    if(temp.style.height === "0px" || temp.style.height === ""){
+        temp.style.height = "250px"
+    }else{
+        temp.style.height = "0"
+    }
+}

@@ -2,11 +2,9 @@
 init()
 
 function init(){
-    renderJoinBorder()
+    // renderJoinBorder()
 }
-     		
 
- 	 	
 function onChoseFile(event){
     event.preventDefault();
     
@@ -29,6 +27,6 @@ function onChoseFile(event){
  	 	
 //resposing to clientWidth
  	 	
-document.getElementsByTagName("BODY")[0].onresize = function() {
-    renderJoinBorder()
-};
+// document.getElementsByTagName("BODY")[0].onresize = function() {
+//     renderJoinBorder()
+// };

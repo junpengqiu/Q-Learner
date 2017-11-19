@@ -104,6 +104,7 @@ server.on('request',function(req,res){
       const filePath = './client' + req.url;
       fs.readFile(filePath, function(error, content) {
         // console.log(content)
+        if(error) res.end()
         res.writeHead(200, {
             'Content-Type': 'text/javascript'
         })
@@ -117,8 +118,23 @@ server.on('request',function(req,res){
       const filePath = './client' + req.url;
       fs.readFile(filePath, function(error, content) {
         // console.log(content)
+        if(error) res.end()
         res.writeHead(200, {
             'Content-Type': 'image/jpeg'
+        })
+        res.end(content,'utf-8');
+        return;
+      })
+    }
+    
+    // css href = /css/xxx
+    else if(urlSep[1] === "css"){
+      const filePath = './client' + req.url;
+      fs.readFile(filePath, function(error, content) {
+        // console.log(content)
+        if(error) res.end()
+        res.writeHead(200, {
+            'Content-Type': 'text/css'
         })
         res.end(content,'utf-8');
         return;
