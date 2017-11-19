@@ -28,7 +28,10 @@ function regUsr(event) {
     myAjax(JSON.stringify(req), function() {
         if (this.readyState == 4 && this.status == 200) {
             var res = JSON.parse(this.responseText);
-            
+            if(res.error !== null){
+                console.log(res)
+                return;
+            }
             document.cookie = "sid="+res.sid;
         }
     })

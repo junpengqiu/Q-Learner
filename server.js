@@ -178,6 +178,7 @@ server.on('request',function(req,res){
         res.end(JSON.stringify({error:"cannot parse the request"}))
       }
       
+      console.log(`got req with action of ${bodyJson.action}`)
       //for dev Test
       if(bodyJson.action === "imgtest"){
           var toBuf = bodyJson.actualData.replace(/^data:image\/\w+;base64,/, "")

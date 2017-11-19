@@ -42,5 +42,10 @@ Body {
   color: #FFF;
 }
 
+.AuthForm {
+  max-width: 300px; 
+  text-align: center; 
+  float: left
+}
 
 
