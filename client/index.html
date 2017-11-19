@@ -11,127 +11,92 @@
 <Body>
   
   <!-- Title Bar -->
-  	<nav style="background-color: white">
-		<div class="banner">
-			<ul class="navWrapper">
-				<li class="navBulletPoint">
-					<a href="/" id="tocheck">
-						H-starter
-					</a>
-				</li>
+	<div class="banner">
+		<ul class="navWrapper">
+			<li class="navBulletPoint">
+				<a href="/" id="tocheck">
+					H-starter
+				</a>
+			</li>
         
-        <li class="navBulletPoint">
-        	<a href="#">
-        		About
-        	</a>
-        </li>
+      <li class="navBulletPoint">
+      	<a href="#">
+        	About
+        </a>
+       </li>
         
-				<li class="navBulletPoint">
-					<a href="#">
-						Contact
-					</a>
-				</li>
+			<li class="navBulletPoint">
+				<a href="#">
+					Contact
+				</a>
+			</li>
 				
-				<li class="navBulletPoint" style="float: right; cursor: pointer" onclick="hey()">
-					<a>
-						Join / Login
-          </a>
-        </li>
-			</ul>
+			<li class="navBulletPoint" style="float: right; cursor: pointer" onclick="hey()">
+				<a>
+					Join / Login
+         </a>
+       </li>
+		</ul>
 			
 				
-		</div>
+	</div>
 		
 		
-		<div id="usrSectionTest">
-		</div>
+	<div id="usrSectionTest">
+	</div>
 				
 			
-		<div>	  
-			<div id="usrSection">
-      	<div>
-	      	<div id="UnauthBlock">
-	        	<div>
-	          				<!--//when document.documentElement.clientWidt < 992, md => sm-->
-	          				<!-- Sign up -->
-					 	 	<div id="join-form">
-					 	 		<div>
-					 	 			<h3 style="color: #777">Join</h3>
-					 	 		</div>
-					 	 		<div>
-					 	 			<input type="email" name="email" ref="email" placeholder="Email" style="width: 80%; height: 40px; font-size: 15px" id="usrName" />
-					 	 		</div>
-					 	 		<div>
-					 	 			<input type="text" name="nickName" ref="nickName" placeholder="Nick Name" style="width: 80%; height: 40px; font-size: 15px" id="nickName" />
-					 	 		</div>
-					 	 		<div>
-					 	 			<input type="password" name="password" ref="password" placeholder="Password" style="width: 80%; height: 40px; font-size: 15px" id="psw" />
-					 	 		</div>
-					 	 		<div>
-					 	 			<input type="password" name="re-password" ref="re-password" placeholder="Re-enter Password" style="width: 80%; height: 40px; font-size: 15px" id="psw" />
-					 	 		</div>
-					 	 	 	<div>
-					 	 	 		<button onclick="regUsr(event);" style="background: linear-gradient(#d84b70,#db436b,#d83862); width: 80%; height: 40px;color: #fff; font-size: 15px">
-					 	 	 			Register
-					 	 	 		</button>
-					 	 	 	</div>
-					 	 	</div>
-					 	 	<!-- Login -->
-					 	 	<div style="text-align: center; ">
-					 	 		<div>
-					 	 			<h3 style="color: #777">Log in</h3>
-					 	 		</div>
-					 	 		<div>
-					 	 			<input type="email" name="email" ref="email" placeholder="Email" style="width: 80%; height: 40px; font-size: 15px" />
-					 	 		</div>
-					 	 	 	<div>
-					 	 			<input type="password" name="password" ref="password" placeholder="Password" style="width: 80%; height: 40px; font-size: 15px" />
-					 	 		</div>
-					 	 	 	<div>
-					 	 	 		<button style="background: linear-gradient(#d84b70,#db436b,#d83862); width: 80%; height: 40px;color: #fff; font-size: 15px">
-					 	 	 			Sign in
-					 	 	 		</button>
-					 	 	 	</div>
-					 	 	</div>
-				 	 	</div>
-				 	 	<!-- to leave some space below border-right of join-form-->
-				 	 	<h3>
-					 		
-					 	</h3>
-			 		</div>
-        		</div>
-     		</div>
-		</div>
-	</nav>
-  
-	<!--search-->
-	<div style="margin-right: auto; margin-left: auto; margin-top: 40px; margin-bottom: 40px; max-width:700px">
-		<div>
-			<input type="text" placeholder="Search for...">
-		    <span>
-		    	<button type="button"> Search </button>
-		    </span>
-    	</div>
-	</div>
-	
-	<!--For Test-->
 	<div>
-		<img id="testimg">
-		<input type="file" onchange="onChoseFile(event)">
-	</div>
-	
-	<!--gallery-->
-	<div>
-		<div>
-			<div>
+  	<div>
+			<div id="UnauthBlock">
 				<div>
-					<img src="img/thumb/img0.jpg">
+					<!--//when document.documentElement.clientWidt < 992, md => sm-->
+					<!-- Sign up -->
+					<div id="join-form" style="max-width: 300px; text-align: center; float: left">
+						<div>
+							<h3 style="color: #777">Join</h3>
+						</div>
+					 	<div>
+							<input type="email" name="email" ref="email" placeholder="Email" style="width: 80%; height: 40px; font-size: 15px" id="usrName" />
+					 	</div>
+					 	<div>
+					 		<input type="text" name="nickName" ref="nickName" placeholder="Nick Name" style="width: 80%; height: 40px; font-size: 15px" id="nickName" />
+					 	</div>
+					 	<div>
+					 		<input type="password" name="password" ref="password" placeholder="Password" style="width: 80%; height: 40px; font-size: 15px" id="psw" />
+					 	</div>
+					 	<div>
+					 		<input type="password" name="re-password" ref="re-password" placeholder="Re-enter Password" style="width: 80%; height: 40px; font-size: 15px" id="psw" />
+					 	</div>
+					 	<div>
+					 		<button onclick="regUsr(event);" style="background: linear-gradient(#d84b70,#db436b,#d83862); width: 80%; height: 40px;color: #fff; font-size: 15px">
+					 			Register
+					 		</button>
+					 	</div>
 				</div>
+					<!-- Login -->
+					<div id="login-form" style="max-width: 300px; text-align: center; float: left">
+						<div>
+							<h3 style="color: #777">Log in</h3>
+						</div>
+						<div>
+							<input type="email" name="email" ref="email" placeholder="Email" style="width: 80%; height: 40px; font-size: 15px" />
+						</div>
+						<div>
+							<input type="password" name="password" ref="password" placeholder="Password" style="width: 80%; height: 40px; font-size: 15px" />
+						</div>
+						<div>
+							<button style="background: linear-gradient(#d84b70,#db436b,#d83862); width: 80%; height: 40px;color: #fff; font-size: 15px">
+						 		Sign in
+						 	</button>
+						</div>
+					</div>
+				</div>
+				<!-- to leave some space below border-right of join-form-->
 			</div>
-		</div>
-	</div>
+    </div>
+  </div>
 	
- 	
 	<script src="/js/helperTool.js"></script>
 	<script src="/js/homepage.js"></script>
 	
